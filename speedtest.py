@@ -3,9 +3,9 @@ speedtest.py
 
 A simple speedtest to check the performance of a new M1 macbook pro
 
-Macbook Pro 14" 2021 M1 Pro 16GB 512GB SSD              113s
-Macbook Pro 16" 2019 2.6GHz 6-core Intel i7             180s
-Macbook Pro 15" mid 2014 2.2GHz Quad core Intel i7      205s
+Macbook Pro 14" 2021 M1 Pro 16GB                            113s
+Macbook Pro 16" 2019 2.6GHz 6-core Intel i7 16GB            180s
+Macbook Pro 15" mid 2014 2.2GHz Quad core Intel i7 16GB     205s
 
 
 '''
