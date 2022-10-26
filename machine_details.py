@@ -26,7 +26,7 @@ print(platform.platform())
 
 print(platform.mac_ver())
 
-# From: https://www.thepythoncode.com/article/get-hardware-system-information-python
+# From: https://www.thepythoncode.com/article/get-hardware-system-information-python  # noqa:E501
 
 print("="*40, "System Information", "="*40)
 uname = platform.uname()
@@ -41,7 +41,8 @@ print(f"Processor: {uname.processor}")
 print("="*40, "Boot Time", "="*40)
 boot_time_timestamp = psutil.boot_time()
 bt = datetime.fromtimestamp(boot_time_timestamp)
-print(f"Boot Time: {bt.year}/{bt.month}/{bt.day} {bt.hour}:{bt.minute}:{bt.second}")
+print(f"Boot Time: {bt.year}/{bt.month}/{bt.day} " +
+      "{bt.hour}:{bt.minute}:{bt.second}")
 
 # let's print CPU information
 print("="*40, "CPU Info", "="*40)
@@ -49,10 +50,10 @@ print("="*40, "CPU Info", "="*40)
 print("Physical cores:", psutil.cpu_count(logical=False))
 print("Total cores:", psutil.cpu_count(logical=True))
 # CPU frequencies
-#cpufreq = psutil.cpu_freq()
-#print(f"Max Frequency: {cpufreq.max:.2f}Mhz")
-#print(f"Min Frequency: {cpufreq.min:.2f}Mhz")
-#print(f"Current Frequency: {cpufreq.current:.2f}Mhz")
+# cpufreq = psutil.cpu_freq()
+# print(f"Max Frequency: {cpufreq.max:.2f}Mhz")
+# print(f"Min Frequency: {cpufreq.min:.2f}Mhz")
+# print(f"Current Frequency: {cpufreq.current:.2f}Mhz")
 # CPU usage
 print("CPU Usage Per Core:")
 for i, percentage in enumerate(psutil.cpu_percent(percpu=True, interval=1)):

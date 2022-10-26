@@ -17,10 +17,10 @@ print('Starting test...')
 
 time_start = datetime.now()
 
-l = [random.randrange(100,999) for i in range(100000000)]
+data = [random.randrange(100, 999) for i in range(100000000)]
 
-squared = [x**2 for x in l]
-sqrt = [x**0.5 for x in l]
+squared = [x**2 for x in data]
+sqrt = [x**0.5 for x in data]
 mul = [x * y for x, y in zip(squared, sqrt)]
 div = [x / y for x, y in zip(squared, sqrt)]
 int_div = [x // y for x, y in zip(squared, sqrt)]
